@@ -229,7 +229,7 @@ in their inclusion. A bindingless form of `import` already exits (i.e., `import 
 
 ### Function and Class Names
 
-This proposal is not actively prusuing discard bindings for function or class names, as those syntactic forms already
+This proposal is not actively pursuing discard bindings for function or class names, as those syntactic forms already
 have a well-defined syntax for discarding the binding by simply eliding the identifier.
 
 # Semantics
@@ -405,7 +405,7 @@ const [a, b, void] = iter; // same, but with `void`
 
 ```js
 const { z: void, ...obj } = { x: 1, y: 2, z: 3 };
-obj; // { x: y, y: 2 }
+obj; // { x: 1, y: 2 }
 ```
 
 ### Explicit Elision in Extractors
